@@ -12,18 +12,17 @@ namespace Game
 
         #endregion
 
+        private Queue<TankAction> _playerActionQueue = new Queue<TankAction>();
         public override void OnNewTurn(int iActionCount)
         {
-            // TODO: do your turn initialization here
+            _playerActionQueue.Clear();
         }
 
         public override Queue<TankAction> GetActionQueue(int iActionCount)
         {
-            // TODO: 1. store a queue in the player tank
-            //       2. create an interface that let's the player input UI enqueue actions
-            //       3. return that queue here
-            
-            return null;
+            return _playerActionQueue;
         }
+        
+        public void AddPlayerActionToQueue(TankAction action) => _playerActionQueue.Enqueue(action);
     }
 }

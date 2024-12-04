@@ -6,7 +6,7 @@ namespace Game.Actions
 {
     public abstract class TankAction 
     {
-        private Tank        m_tank;
+        protected Tank        m_tank;
 
         #region Properties
 

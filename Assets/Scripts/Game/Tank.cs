@@ -1,4 +1,4 @@
-using DSA;
+         using DSA;
 using Game.Actions;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,7 +13,7 @@ namespace Game
         private Vector2Int          m_vPosition;
         private int                 m_iRotation = 0;
 
-        #region Properties
+        #region Properties c      
 
         public Vector2Int Position
         {

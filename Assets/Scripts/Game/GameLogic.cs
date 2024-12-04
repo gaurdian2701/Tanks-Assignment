@@ -168,6 +168,7 @@ namespace Game
 
                 if (newTankAction != null)
                 {
+                    playerTank.AddPlayerActionToQueue(newTankAction);
                     // TODO: somehow enqueue the new tank action in the player tank's queue here
                 }
             }

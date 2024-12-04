@@ -20,8 +20,7 @@ namespace Game.Actions
 
         public override IEnumerator PerformAction()
         {
-            // TODO: implement a smooth turn of the tank
-            yield break;
+            yield return null;
         }
     }
 }
