@@ -8,10 +8,6 @@ namespace Game
 {
     public class PlayerTank : Tank
     {
-        #region Properties
-
-        #endregion
-
         private Queue<TankAction> _playerActionQueue = new Queue<TankAction>();
         public override void OnNewTurn(int iActionCount)
         {
